@@ -1,0 +1,6 @@
+images/*.gif
+css/reset.css
+css/jquery.lightbox*
+js/jquery.lightbox*
+*.swp
+~*
