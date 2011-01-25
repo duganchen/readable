@@ -1,0 +1,23 @@
+Readable CMS-targed Wordpress theme.
+
+This is the theme used by Dugan Chen's homepage. It does not support comments.
+
+Before using it, you need to add files from two other projects:
+
+1. HTML 5 Reset Stylesheet:
+http://html5doctor.com/html-5-reset-stylesheet/
+
+Save it as readable/css/reset.css
+
+2. jQuery lightBox plugin
+http://leandrovieira.com/projects/jquery/lightbox/
+
+I'm going to assume that the current version is 0.5. Unzip it, then do the following:
+
+2a. Copy lightbox/css/jquery.lightbox-0.5.css to
+readable/css/jquery.lightbox.css
+
+2b. Copy lightbox/js/jquery.lightbox-0.5.min.js to
+readable/css/jquery.lightbox.min.js
+
+2c. Copy lightbox/images/ to readable/images/
