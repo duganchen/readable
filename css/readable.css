@@ -1,0 +1,283 @@
+a:link {
+    color:#004B91;
+}
+a:visited {
+    color:#743399;
+}
+a:active,
+a:hover {
+    color: #FF4B33;
+}
+
+
+article {
+	width: 100%;
+	padding-bottom: 3em;
+}
+
+article blockquote {
+	padding-top: 0.75em;
+	font-style: italic;
+	float: right;
+	width: 12em;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+
+article h1 {
+	font-size: 140%;
+}
+
+article h2 {
+	font-size: 105%;
+}
+
+
+article dd + h2,
+article img + h2,
+article h1 + h2,
+article h2 + h2,
+article ol + h2,
+article p + h2, 
+article ul + h2,
+article table + h2
+article dd + h3,
+article img + h3,
+article h1 + h3,
+article h2 + h3,
+article h3 + h3,
+article ol + h3,
+article p + h3, 
+article ul + h3,
+article table + h3
+{
+	margin-top: 3em;
+}
+
+article h3 {
+	font-style: italic;
+	font-size: 90%;
+}
+
+article blockquote,
+article dt,
+article p,
+article ul {
+	margin-top: 1.5em;
+}
+
+article ol,
+article p + p,
+article ul {
+	text-indent: 2em;
+}
+
+article dl {
+	margin-left: 2em;
+}
+
+article dt {
+	font-weight: bold;
+}
+
+article blockquote,
+article time {
+	color: #666;
+}
+
+article time {
+	font-size: 90%;
+}
+
+article code,
+article pre {
+	font-family: Inconsolata;
+}
+
+body {
+	padding: 0 1em;
+	font-family: Cantarell;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+#container {
+	padding-right: 14em;
+	margin-bottom: 1em;
+}
+
+#container .column {
+	float: left;
+	position: relative;
+}
+
+footer {
+	border-top: 1px solid #ccc;
+	padding: 3em 0 1.5em 0;
+	clear: both;
+}
+
+header h1 {
+	padding-top: 3em;
+	font-family: Nobile;
+	font-size: 200%;
+}
+
+header h2
+{
+	font-family: Cantarell;
+    font-weight: normal;
+    line-height: 2em;
+    font-style: italic;
+    color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Nobile;
+}
+
+
+html {
+	background: white;
+	color: black;
+
+}
+
+
+#menu {
+	margin: 4em 0;
+	width: 100%;
+	overflow: auto;
+	background: black;
+	color: white;
+	height: 3.5em;
+}
+
+#menu a {
+	display: block;
+}
+
+#menu a:link,
+#menu a:visited,
+#menu a:active,
+#menu a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#menu a:active, #menu a:hover {
+	font-weight: bold;
+}
+
+#menu a,
+#menu h2 {
+	color: white;
+}
+
+#menu ul li {
+	float: left;
+	width: 5em;
+	color: white;
+	margin: 0 1em 0 1em;
+	text-indent: 1em;
+	line-height: 3.5em;
+}
+
+
+#menu ul li ul { 
+	position: absolute;
+	left: -999em;
+	margin-top: -1em;
+	width: 14em;
+}
+
+#menu ul li ul li {
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #ccc;
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	width: 14em;
+}
+
+#menu li:hover ul {
+	left: auto;
+	z-index: 1;
+}
+
+
+#menu li:hover ul li ul {
+	left: -999em;
+}
+
+#menu  ul li ul li ul {
+	margin-left: 7em;
+	margin-top: -2.5em;
+}
+
+#menu ul li ul li:hover ul {
+	left: auto;
+}
+
+nav,
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6 {
+	font-family: Droid Sans;
+	font-style: normal;
+}
+
+#sidebar {
+	margin-right: -14em;
+	width: 10em;
+	padding-left: 4em;
+}
+
+#sidebar a:link,
+#sidebar a:visited {
+	text-decoration: none;
+}
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#sidebar ul {
+	margin-bottom: 1em;
+}
+
+time {
+	line-height: 2.5em;
+}
+
+
+#wrapper {
+	margin: 0 auto;
+	min-width: 20em;
+	max-width: 52em;
+}
+
+ol, ul {
+	list-style-position: inside;
+}
+
+time, blockquote
+{
+    color: #666;
+}
+
+
+
