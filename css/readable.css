@@ -1,12 +1,12 @@
-a:link {
-    color:#004B91;
+:link {
+	color:#004B91;
 }
 a:visited {
-    color:#743399;
+	color:#743399;
 }
 a:active,
 a:hover {
-    color: #FF4B33;
+	color: #FF4B33;
 }
 
 
@@ -16,7 +16,6 @@ article {
 }
 
 article blockquote {
-	padding-top: 0.75em;
 	font-style: italic;
 	float: right;
 	width: 12em;
@@ -60,13 +59,13 @@ article h3 {
 	font-size: 90%;
 }
 
-article blockquote,
 article dt,
 article p,
 article ul {
 	margin-top: 1.5em;
 }
 
+article div + p,
 article ol,
 article p + p,
 article ul {
@@ -74,6 +73,11 @@ article ul {
 }
 
 article dl {
+	margin-left: 0em;
+}
+
+article .hanging {
+	text-indent: 0;
 	margin-left: 2em;
 }
 
@@ -272,11 +276,6 @@ time {
 
 ol, ul {
 	list-style-position: inside;
-}
-
-time, blockquote
-{
-    color: #666;
 }
 
 

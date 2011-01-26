@@ -7,7 +7,6 @@ http://core.trac.wordpress.org/ticket/10891
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!-- http://code.google.com/p/html5resetcss/ -->
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 <meta charset="<?php bloginfo('charset'); ?>">
 <title><?php bloginfo('name'); ?></title>
@@ -31,8 +30,6 @@ http://core.trac.wordpress.org/ticket/10891
 		<?php the_post(); ?>
 		<?php if (is_front_page() || is_archive()): ?>
 			<h2><?php the_title(); ?></h2>
-		<?php else: ?>
-			<h1><?php the_title(); ?></h1>
 		<?php endif; ?>
 		<?php if (is_front_page() || is_archive()): ?>
 			<time><?php the_time('Y-m-j'); ?></time>
@@ -67,8 +64,6 @@ http://core.trac.wordpress.org/ticket/10891
 </footer>
 </div>
 </div>
-<!-- The template URI. For Javascript. -->
-<a id="template" href="<?php bloginfo('template_url'); ?>"></a>
 <?php wp_footer(); ?>
 </body>
 </html>
