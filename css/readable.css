@@ -203,6 +203,7 @@ html {
 	z-index: 1;
 }
 
+
 #menu ul li ul li {
 	background-color: black;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -215,6 +216,16 @@ html {
 	width: 14em;
 }
 
+#menu ul ul {
+	margin-top: -1em;
+}
+
+#menu ul ul ul {
+	margin-left: 7em;
+	margin-top: -2.5em;
+}
+
+
 /* menus level 2 */
 
 #menu ul li:hover ul ul {
@@ -225,10 +236,15 @@ html {
 	left: auto;
 }
 
-#menu ul ul ul {
-	margin-left: 7em;
-	margin-top: -2.5em;
+
+/* menus level 3 */
+
+#menu ul ul li:hover ul ul {
 	left: -999em;
+}
+
+#menu ul ul ul li:hover ul {
+	left: auto;
 }
 
 nav,
