@@ -155,7 +155,6 @@ html {
 
 }
 
-
 #menu {
 	margin: 4em 0;
 	width: 100%;
@@ -165,8 +164,10 @@ html {
 	height: 3.5em;
 }
 
+
 #menu a {
 	display: block;
+	width: 14em;
 }
 
 #menu a:link,
@@ -181,26 +182,24 @@ html {
 	font-weight: bold;
 }
 
-#menu a,
-#menu h2 {
-	color: white;
-}
 
 #menu ul li {
 	float: left;
 	width: 5em;
-	color: white;
-	margin: 0 1em 0 1em;
+	margin: 0 1em;
 	text-indent: 1em;
 	line-height: 3.5em;
 }
 
-
-#menu ul li ul { 
+#menu ul li ul {
 	position: absolute;
-	left: -999em;
-	margin-top: -1em;
 	width: 14em;
+	left: -999em; 
+}
+
+#menu ul li:hover ul {
+	left: auto;
+	z-index: 1;
 }
 
 #menu ul li ul li {
@@ -215,24 +214,6 @@ html {
 	width: 14em;
 }
 
-#menu li:hover ul {
-	left: auto;
-	z-index: 1;
-}
-
-
-#menu li:hover ul li ul {
-	left: -999em;
-}
-
-#menu  ul li ul li ul {
-	margin-left: 7em;
-	margin-top: -2.5em;
-}
-
-#menu ul li ul li:hover ul {
-	left: auto;
-}
 
 nav,
 nav h1,
