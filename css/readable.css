@@ -162,6 +162,7 @@ html {
 	background: black;
 	color: white;
 	height: 3.5em;
+	font-family: Droid Sans;
 }
 
 
@@ -214,6 +215,21 @@ html {
 	width: 14em;
 }
 
+/* menus level 2 */
+
+#menu ul li:hover ul ul {
+	left: -999em;
+}
+
+#menu ul ul li:hover ul {
+	left: auto;
+}
+
+#menu ul ul ul {
+	margin-left: 7em;
+	margin-top: -2.5em;
+	left: -999em;
+}
 
 nav,
 nav h1,
