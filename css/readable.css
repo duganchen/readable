@@ -60,20 +60,30 @@ article h3 {
 }
 
 article dt,
+article ol,
 article p,
 article ul {
 	margin-top: 1.5em;
 }
 
 article div + p,
-article ol,
 article p + p,
-article ul {
+article ul + p,
+article dl + p,
+article ol + p {
 	text-indent: 2em;
 }
 
-article dl {
-	margin-left: 0em;
+article ol {
+	font-weight: bold;
+}
+
+article ol span {
+	font-weight: normal;
+}
+
+article dl, article ul, article ol {
+	margin-left: 2em;
 }
 
 article .hanging {
@@ -106,11 +116,22 @@ body {
     word-wrap: break-word;
     text-align: justify;
     text-justify: newspaper;
-}
+	}
 
 #container {
 	padding-right: 14em;
 	margin-bottom: 1em;
+}
+
+.hanging {
+	text-indent: 0;
+	text-align: left;
+	text-justify: auto;
+}
+
+pre, code {
+	text-align: left;;
+	text-justify: auto;
 }
 
 #container .column {
