@@ -105,6 +105,7 @@ article time {
 
 article time {
 	font-size: 90%;
+	display: block;
 }
 
 article code,
