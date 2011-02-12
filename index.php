@@ -56,9 +56,18 @@ http://core.trac.wordpress.org/ticket/10891
 </ul>
 </nav>
 <footer>
-<?php if (!is_front_page() && !is_archive()): ?>
+<?php
+	// Change this part if you're using this theme yourself, of course.
+?>
+<?php if (is_front_page() || is_archive()): ?>
 	<p>
-	Last revised on <?php the_date(); ?>.
+	By Dugan Chen (duga<a
+	href="http://www.google.com/recaptcha/mailhide/d?k=01e855LS0KvLv6fhvucTaeFg==&amp;c=OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501e855LS0KvLv6fhvucTaeFg\75\75\46c\75OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@fastmail.fm)).
+	</p>
+<?php else: ?>
+	<p>
+	Last revised on <?php the_date(); ?> by Dugan Chen (duga<a
+	href="http://www.google.com/recaptcha/mailhide/d?k=01e855LS0KvLv6fhvucTaeFg==&amp;c=OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501e855LS0KvLv6fhvucTaeFg\75\75\46c\75OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@fastmail.fm).
 	</p> 
 <?php endif; ?>
 </footer>
