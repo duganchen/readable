@@ -56,10 +56,10 @@ http://core.trac.wordpress.org/ticket/10891
 </ul>
 </nav>
 <footer>
-<?php if (is_front_page()): ?>
-	<p>By Dugan Chen.</p> 
-<?php else: ?>
-	<p>Last revised on <?php the_date(); ?>, by Dugan Chen.</p> 
+<?php if (!is_front_page() && !is_archive()): ?>
+	<p>
+	Last revised on <?php the_date(); ?>.
+	</p> 
 <?php endif; ?>
 </footer>
 </div>
