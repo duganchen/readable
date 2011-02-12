@@ -31,11 +31,6 @@ http://core.trac.wordpress.org/ticket/10891
 		<?php if (is_front_page() || is_archive()): ?>
 			<h2><?php the_title(); ?></h2>
 			<time><?php the_time('Y-m-j'); ?></time>
-		<?php else: ?>
-			<h1><?php
-				// Pages should have a custom field: "title"
-				echo get_post_meta($post->ID, 'title', true);
-			?></h1>
 		<?php endif; ?>
 		<?php the_content(); ?>
 		<?php if (count(get_pages('child_of='.$post->ID)) > 0): ?>

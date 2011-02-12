@@ -42,6 +42,7 @@ article h2 {
 
 
 article dd + h2,
+article dl + h2,
 article img + h2,
 article h1 + h2,
 article h2 + h2,
