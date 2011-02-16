@@ -2,6 +2,9 @@ Readable CMS-targed Wordpress theme.
 
 This is the theme used by Dugan Chen's homepage. It does not support comments.
 
+It produces valid HTML5 pages. All sizes and measurements are specified in
+ems.
+
 Before using it, you need to add files from one other project:
 
 1. HTML 5 Reset Stylesheet: http://html5doctor.com/html-5-reset-stylesheet/
