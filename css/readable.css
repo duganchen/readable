@@ -31,6 +31,9 @@ article blockquote {
 	margin-bottom: 1em;
 }
 
+article blockquote p + p {
+	text-indent: 0;
+}
 
 article h1 {
 	font-size: 140%;
