@@ -37,10 +37,12 @@ article blockquote p + p {
 
 article h1 {
 	font-size: 140%;
+	font-weight: bold;
 }
 
 article h2 {
 	font-size: 105%;
+	font-weight: bold;
 }
 
 
@@ -69,6 +71,7 @@ article table + h3
 article h3 {
 	font-style: italic;
 	font-size: 90%;
+	font-weight: bold;
 }
 
 article h3,
@@ -185,13 +188,11 @@ html {
 #menu {
 	margin: 4em 0;
 	width: 100%;
-	overflow: auto;
 	background: black;
 	color: white;
 	height: 3.5em;
 	font-family: Droid Sans;
 }
-
 
 #menu a {
 	display: block;
@@ -249,9 +250,12 @@ html {
 
 #menu ul ul ul {
 	margin-left: 9em;
-	margin-top: -3.1em; 
+	margin-top: -3em; 
 }
 
+#menu ul ul ul li {
+	margin-top: -1px;
+}
 
 /* menus level 2 */
 
