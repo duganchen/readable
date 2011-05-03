@@ -28,11 +28,25 @@
 					<?php if (have_posts()): ?>
 						<?php while (have_posts()): ?>
 							<?php the_post(); ?>
+
 							<?php if (is_front_page() || is_archive()): ?>
-								<h2><?php the_title(); ?></h2>
-								<time><?php the_time('Y-m-j'); ?></time>
+								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<?php endif; ?>
-							<?php the_content(); ?>
+				
+							<?php if (is_single()): ?>
+								<h1><?php the_title(); ?></h1>
+							<?php endif; ?>
+								
+							<?php if (is_front_page() || is_archive() || is_single()): ?>
+								<time><?php the_time('Y-m-j'); ?></time>
+							
+							<?php endif; ?>
+
+							<?php if (is_front_page() || is_archive()): ?>
+								<?php the_excerpt(); ?>
+							<?php else: ?>
+								<?php the_content(); ?>
+							<?php endif; ?>
 							<?php if (count(get_pages('child_of='.$post->ID)) > 0): ?>
 								<h2>Sections Of Interest</h2>
 								<ul>
