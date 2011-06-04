@@ -80,6 +80,7 @@ article dt,
 article ol,
 article p,
 article ul,
+article table,
 .block {
 	margin-top: 1.5em;
 }
@@ -88,9 +89,11 @@ article div + p,
 article p + p,
 article ul + p,
 article dl + p,
-article ol + p {
+article ol + p,
+article table + p {
 	text-indent: 2em;
 }
+
 
 article ol {
 	font-weight: bold;
@@ -322,5 +325,20 @@ ol, ul {
 	list-style-position: inside;
 }
 
+/* This will be a problem if we ever start something
+ with a table. */
+table {
+	margin-left: 2em;
+}
 
+table, th, td {
+	border: 1px solid #ccc;
+}
 
+table th, td {
+	padding: 1em;
+}
+
+table {
+	border-collapse: collapse;
+}
