@@ -54,6 +54,12 @@
 								</ul>
 							<?php endif; ?>
 						<?php endwhile; ?>
+						<?php if (is_front_page()): ?>
+							<hr>
+							<p>
+								<?php posts_nav_link(); ?>
+							</p>
+						<?php endif; ?>
 					<?php else: ?>
 						<p>Sorry, no posts matched your criteria.</p>
 					<?php endif; ?>
