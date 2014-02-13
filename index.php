@@ -17,32 +17,42 @@
 			<header>
 				<h1><?php bloginfo('name'); ?></h1>
 				<h2><?php bloginfo('description'); ?></h2>
+
+
+
 				<nav id="menu">
 					<ul>
 						<?php wp_list_pages('title_li='); ?>
 					</ul>
 				</nav>
+
+
 			</header>
 			<div id="container">
+
 				<article class="column">
+
+					<?php get_search_form(); ?>
+					<hr>
+
 					<?php if (have_posts()): ?>
 						<?php while (have_posts()): ?>
 							<?php the_post(); ?>
 
-							<?php if (is_front_page() || is_archive()): ?>
+							<?php if (is_front_page() || is_archive() || is_search()): ?>
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<?php endif; ?>
-				
+
 							<?php if (is_single()): ?>
 								<h1><?php the_title(); ?></h1>
 							<?php endif; ?>
-								
-							<?php if (is_front_page() || is_archive() || is_single()): ?>
+
+							<?php if (is_front_page() || is_archive() || is_single() || is_search()): ?>
 								<time><?php the_time('Y-m-j'); ?></time>
-							
+
 							<?php endif; ?>
 
-							<?php if (is_front_page() || is_archive()): ?>
+							<?php if (is_front_page() || is_archive() || is_search()): ?>
 								<?php the_excerpt(); ?>
 							<?php else: ?>
 								<?php the_content(); ?>
@@ -54,7 +64,7 @@
 								</ul>
 							<?php endif; ?>
 						<?php endwhile; ?>
-						<?php if (is_front_page()): ?>
+						<?php if (is_front_page() || is_search()): ?>
 							<hr>
 							<p>
 								<?php posts_nav_link(); ?>
@@ -79,25 +89,15 @@
 					?>
 					<?php if (is_front_page() || is_archive()): ?>
 						<p>
-							By Dugan Chen (duga<a
-							href="http://www.google.com/recaptcha/mailhide/d?k=01e855LS0KvLv6fhvucTaeFg==&amp;c=OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24="
-							onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501e855LS0KvLv6fhvucTaeFg\75\75\46c\75OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24\075',
-							'',
-							'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
-							return false;"
-							title="Reveal this e-mail address">...</a>@fastmail.fm)).
+							By Dugan Chen (thed<a href="http://www.google.com/recaptcha/mailhide/d?k=01UUWk0_R0AAp7ZY7S8ep7Mw==&amp;c=kF269A4DQMn9Q_PuthJ-ipRjREHb5Hv09VuDHCUFM6s=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501UUWk0_R0AAp7ZY7S8ep7Mw\75\75\46c\75kF269A4DQMn9Q_PuthJ-ipRjREHb5Hv09VuDHCUFM6s\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@gmail.com).
 						</p>
 					<?php else: ?>
 						<p>
-							Last revised on <?php the_date(); ?> by Dugan Chen (duga<a
-							href="http://www.google.com/recaptcha/mailhide/d?k=01e855LS0KvLv6fhvucTaeFg==&amp;c=OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24="
-							onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501e855LS0KvLv6fhvucTaeFg\75\75\46c\75OfRhaUuz5XiDdhrjW44i08EpyOpA_0RJcPvBIqe1a24\075',
-							'',
-							'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
-							return false;"
-							title="Reveal this e-mail address">...</a>@fastmail.fm).
-						</p> 
+							Last revised on <?php the_date(); ?> by Dugan Chen (thed<a href="http://www.google.com/recaptcha/mailhide/d?k=01UUWk0_R0AAp7ZY7S8ep7Mw==&amp;c=kF269A4DQMn9Q_PuthJ-ipRjREHb5Hv09VuDHCUFM6s=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501UUWk0_R0AAp7ZY7S8ep7Mw\75\75\46c\75kF269A4DQMn9Q_PuthJ-ipRjREHb5Hv09VuDHCUFM6s\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@gmail.com).
+						</p>
 					<?php endif; ?>
+
+
 				</footer>
 			</div>
 		</div>
