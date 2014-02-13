@@ -32,8 +32,10 @@
 
 				<article class="column">
 
-					<?php get_search_form(); ?>
-					<hr>
+					<?php if (is_search() || is_front_page()): ?>
+						<?php get_search_form(); ?>
+						<hr>
+					<?php endif; ?>
 
 					<?php if (have_posts()): ?>
 						<?php while (have_posts()): ?>
